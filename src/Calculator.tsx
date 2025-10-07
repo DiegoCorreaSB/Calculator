@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import './App.css'
+import './Calculator.css'
 
-function App() {
+function Calculator() {
   
   const [numberLeft, setNumberLeft] = useState<string>('');
   const [numberRight, setNumberRight] = useState<string>('');
@@ -57,6 +57,12 @@ function App() {
         setOp('');
       }
     }
+
+    const handleClear = () => {
+      setNumberLeft('')
+      setNumberRight('')
+      setOp('')
+    }
     
     // console.log(op);
     console.log({message: "numero a -> " + numberLeft});
@@ -85,16 +91,17 @@ function App() {
               <button onClick={() => {handleNumber('1') }}>1</button>
               <button onClick={() => {handleNumber('2') }}>2</button>
               <button onClick={() => {handleNumber('3') }}>3</button> 
-              <button onClick={() => {handleNumber('0') }}>0</button>
               <button onClick={() => {handleNumber('.')}}>,</button>
+              <button onClick={() => {handleNumber('0') }}>0</button>
+              <button className='button-result' onClick={() => {handleResult()}}>=</button>
             </div>
             
             <div id='container-operational'>
+              <button className='button-clear' onClick={() => {handleClear()}}>C</button>
               <button onClick={() => {handleOperator('/')}}>÷</button>
               <button onClick={() => {handleOperator('*')}}>X</button>
               <button onClick={() => {handleOperator('-')}}>-</button>
               <button onClick={() => {handleOperator('+')}}>+</button>
-              <button onClick={() => {handleResult()}}>=</button>
             </div>
             
           </div>
@@ -104,4 +111,4 @@ function App() {
   )
 }
 
-export default App
+export default Calculator
