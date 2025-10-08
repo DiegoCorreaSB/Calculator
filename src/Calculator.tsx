@@ -74,6 +74,7 @@ function Calculator() {
     return (
     <>
       <div id="main">
+        <h1 id='title'>Calculator</h1>
         <div id='container-caulculator'>
 
           <div id='container-view'>
@@ -106,6 +107,9 @@ function Calculator() {
             
           </div>
         </div>
+        <footer id='footer'>
+          <p>Desenvolvido por <a href="https://github.com/DiegoCorreaSB" target='_blank'>Diego Corrêa</a></p>
+        </footer>
       </div>
     </>
   )

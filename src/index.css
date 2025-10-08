@@ -41,13 +41,23 @@ button {
   transition: border-color 0.25s;
 }
 
+#footer {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 25px;
+}
+
+#footer a {
+  color: white;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    background-color: #cdcaca;
   }
-  a:hover {
-    color: #747bff;
+
+  #footer a {
+    color: rgb(1, 1, 1);
   }
 
 }
