@@ -2,7 +2,7 @@
 
 Uma calculadora simples desenvolvida com **React**, com interface inspirada em calculadoras clássicas. Este projeto é ideal para quem quer praticar React e manipulação de estados.
 
-![Screenshot do Bio-Links](public/capturadetela.png)
+![Screenshot do Bio-Links](public/capturadetela2)
 
 ---
 
